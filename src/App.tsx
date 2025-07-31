@@ -1,10 +1,10 @@
+import { Header } from "./components/Header";
+import {Footer} from "./components/Footer";
 function App() {
   return (
     <div className="d-flex flex-column" style={{ minHeight: "100vh" }}>
       {/* Header ด้านบน */}
-      <header className="text-white bg-primary p-2 w-100">
-        <h4>Note App</h4>
-      </header>
+      <Header></Header>
 
       <div className="d-flex flex-grow-1">
         {/* Sidebar ด้านซ้าย */}
@@ -116,9 +116,10 @@ function App() {
       </div>
 
       {/* Footer ด้านล่าง */}
-      <footer className="text-secondary text-center p-2 bg-light mt-auto">
+      {/* <footer className="text-secondary text-center p-2 bg-light mt-auto">
         Copyright © 2026 chanadda thanyaratthanon 67062039
-      </footer>
+      </footer> */}
+      <Footer year="2026" fullName="Wisarut Sada" studentId="630612110"></Footer>
     </div>
   );
 }
